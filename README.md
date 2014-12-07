@@ -10,7 +10,7 @@ Installation:
   3. Navigate back to the folder ATOM_FOLDER/resources/app and edit the file named "package.json"
   4. Scroll down until you see<br />
      "packageDependencies": {
-  5. Add in it this - <br />
+  5. Add this line in <br />
     "language-pawn": "0.0.1",
   6. Enjoy.
   
