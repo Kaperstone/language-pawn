@@ -1,5 +1,5 @@
 {
-  ".source.pwn": {
+  ".source.pwn .source.inc": {
     "OnClientMessage":                    {"prefix": "clientmessage",               "body": "public OnClientMessage(color, text[]) {\n\n}"},
     "OnPlayerDeath":                      {"prefix": "npcdeath",                    "body": "public OnPlayerDeath(playerid) {\n\treturn 1;\n}"},
     "OnPlayerStreamIn":                   {"prefix": "npcstreamin",                 "body": "public OnPlayerStreamIn(playerid) {\n\treturn 1;\n}"},
