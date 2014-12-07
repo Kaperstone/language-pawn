@@ -1,0 +1,19 @@
+{
+  "name": "language-pawn",
+  "version": "0.0.1",
+  "description": "Pawn language support in Atom",
+  "license": "MIT",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "dependencies": {},
+  "homepage": "https://github.com/Kaperstone/atom-language-pawn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kaperstone/language-pawn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kaperstone/atom-language-pawn/issues"
+  }
+}
