@@ -19,7 +19,7 @@
     "include": "#comments"
   },
   {
-    "match": "\\b(break|native|stock|case|continue|default|do|sizeof|else|new|enum|static|for|goto|if|return|public|forward|switch|while)\\b",
+    "match": "\\b(YCMD|CMD|COMMAND|break|native|stock|case|continue|default|do|sizeof|else|new|enum|static|for|goto|if|return|public|forward|switch|while)\\b",
     "name": "keyword.control.c"
   },
   {
