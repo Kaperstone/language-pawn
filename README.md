@@ -3,6 +3,8 @@ Pawn syntax for Atom editor.
 
 This is Pawn language for Atom, which you can download from http://atom.io
 
+Thread on SA-MP Forums: http://forum.sa-mp.com/showthread.php?t=549547
+
 Installation:
 
   1. Download the repository
