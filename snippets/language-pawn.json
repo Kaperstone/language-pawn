@@ -1,66 +1,320 @@
 {
-  ".source.pwn .source.inc": {
-    "OnClientMessage":                    {"prefix": "clientmessage",               "body": "public OnClientMessage(color, text[]) {\n\n}"},
-    "OnPlayerDeath":                      {"prefix": "npcdeath",                    "body": "public OnPlayerDeath(playerid) {\n\treturn 1;\n}"},
-    "OnPlayerStreamIn":                   {"prefix": "npcstreamin",                 "body": "public OnPlayerStreamIn(playerid) {\n\treturn 1;\n}"},
-    "OnPlayerStreamOut":                  {"prefix": "npcstreamout",                "body": "public OnPlayerStreamOut(playerid) {\n\treturn 1;\n}"},
-    "OnPlayerText":                       {"prefix": "npctext",                     "body": "public OnPlayerText(playerid, text[]) {\n\treturn 1;\n}"},
-    "OnRecordingPlaybackEnd":             {"prefix": "recordplaybackend",           "body": "public OnRecordingPlaybackEnd() {\n\n}"},
-    "OnVehicleStreamIn":                  {"prefix": "npcvehiclestreamin",          "body": "public OnVehicleStreamIn(vehicleid) {\n\treturn 1;\n}"},
-    "OnVehicleStreamOut":                 {"prefix": "npcvehiclestreamout",         "body": "public OnVehicleStreamOut(vehicleid) {\n\treturn 1;\n}"},
-    "OnDialogResponse":                   {"prefix": "dialogresponse",              "body": "public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {\n\treturn 0;\n}"},
-    "OnEnterExitModShop":                 {"prefix": "enterexitmodshop",            "body": "public OnEnterExitModShop(playerid,enterexit,interiorid)"},
-    "OnFilterScriptExit":                 {"prefix": "filterscriptexit",            "body": "public OnFilterScriptInit() {\n\treturn 1;\n}"},
-    "OnFilterScriptInit":                 {"prefix": "filterscriptinit",            "body": "public OnFilterScriptInit() {\n\treturn 1;\n}"},
-    "OnGameModeExit":                     {"prefix": "gamemodeexit",                "body": "public OnGameModeExit() {\n\treturn 1;\n}"},
-    "OnGameModeInit":                     {"prefix": "gamemodeinit",                "body": "public OnGameModeInit() {\n\treturn 1;\n}"},
-    "OnIncomingConnection":               {"prefix": "incomingconnection",          "body": "public OnIncomingConnection(playerid, ip_address[], port) {\n\treturn 1;\n}"},
-    "OnObjectMoved":                      {"prefix": "objectmoved",                 "body": "public OnObjectMoved(objectid) {\n\treturn 1;\n}"},
-    "OnPlayerClickMap":                   {"prefix": "playerclickmap",              "body": "public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ) {\n\treturn 1;\n}"},
-    "OnPlayerClickPlayer":                {"prefix": "playerclickplayer",           "body": "public OnPlayerClickPlayer(playerid, clickedplayerid, source) {\n\treturn 1;\n}"},
-    "OnPlayerClickPlayerTextDraw":        {"prefix": "playerclickplayertd",         "body": "public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid) {\n\treturn 1;\n}"},
-    "OnPlayerClickTextDraw":              {"prefix": "playerclicktd",               "body": "public OnPlayerClickTextDraw(playerid, Text:clickedid) {\n\treturn 1;\n}"},
-    "OnPlayerCommandText":                {"prefix": "playercommand",               "body": "public OnPlayerCommandText(playerid, cmdtext[]) {\n\treturn 0;\n}"},
-    "OnPlayerConnect":                    {"prefix": "playerconnect",               "body": "public OnPlayerConnect(playerid) {\n\treturn 1;\n}"},
-    "OnPlayerDeath":                      {"prefix": "playerdeath",                 "body": "public OnPlayerDeath(playerid, killerid, reason) {\n\treturn 1;\n}"},
-    "OnPlayerDisconnect":                 {"prefix": "playerdisconnect",            "body": "public OnPlayerDisconnect(playerid, reason) {\n\treturn 1;\n}"},
-    "OnPlayerEditAttachedObject":         {"prefix": "playereditattachedobject",    "body": "public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ) {\n\treturn 1;\n}"},
-    "OnPlayerEnterCheckpoint":            {"prefix": "playerentercp",               "body": "public OnPlayerEnterCheckpoint(playerid) {\n\treturn 1;\n}"},
-    "OnPlayerEditObject":                 {"prefix": "playereditobject",            "body": "public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ) {\n\n}"},
-    "OnPlayerEnterRaceCheckpoint":        {"prefix": "playerenterracecp",           "body": "public OnPlayerEnterRaceCheckpoint(playerid) {\n\treturn 1;\n}"},
-    "OnPlayerEnterVehicle":               {"prefix": "playerentervehicle",          "body": "public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger) {\n\treturn 1;\n}"},
-    "OnPlayerExitVehicle":                {"prefix": "playerexitvehicle",           "body": "public OnPlayerExitVehicle(playerid, vehicleid) {\n\treturn 1;\n}"},
-    "OnPlayerExitedMenu":                 {"prefix": "playerexitedmenu",            "body": "public OnPlayerExitedMenu(playerid) {\n\treturn 1;\n}"},
-    "OnPlayerGiveDamage":                 {"prefix": "playergivedamage",            "body": "public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart) {\n\treturn 1;\n}"},
-    "OnPlayerInteriorChange":             {"prefix": "playerinteriorchange",        "body": "public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid) {\n\treturn 1;\n}"},
-    "OnPlayerLeaveCheckpoint":            {"prefix": "playerleavecp",               "body": "public OnPlayerLeaveCheckpoint(playerid) {\n\treturn 1;\n}"},
-    "OnPlayerKeyStateChange":             {"prefix": "playerkeystatechange",        "body": "public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {\n\treturn 1;\n}"},
-    "OnPlayerLeaveRaceCheckpoint":        {"prefix": "playerleaveracecp",           "body": "public OnPlayerLeaveRaceCheckpoint(playerid) {\n\treturn 1;\n}"},
-    "OnPlayerObjectMoved":                {"prefix": "playerobejctmoved",           "body": "public OnPlayerObjectMoved(playerid,objectid) {\n\treturn 1;\n}"},
-    "OnPlayerPickUpPickup":               {"prefix": "playerpickup",                "body": "public OnPlayerPickUpPickup(playerid, pickupid) {\n\treturn 1;\n}"},
-    "OnPlayerRequestClass":               {"prefix": "playerrequestclass",          "body": "public OnPlayerRequestClass(playerid, classid) {\n\treturn 1;\n}"},
-    "OnPlayerRequestSpawn":               {"prefix": "playerrequestspawn",          "body": "public OnPlayerRequestSpawn(playerid) {\n\treturn 1;\n}"},
-    "OnPlayerSelectObject":               {"prefix": "playerselectobject",          "body": "public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:fY, Float:fZ) {\n\treturn 1;\n}"},
-    "OnPlayerSelectedMenuRow":            {"prefix": "playerselectmenurow",         "body": "public OnPlayerSelectedMenuRow(playerid, row) {\n\treturn 1;\n}"},
-    "OnPlayerStateChange":                {"prefix": "playerstatechange",           "body": "public OnPlayerStateChange(playerid, newstate, oldstate) {\n\treturn 1;\n}e"},
-    "OnPlayerSpawn":                      {"prefix": "playerspawn",                 "body": "public OnPlayerSpawn(playerid) {\n\treturn 1;\n}"},
-    "OnPlayerStreamIn":                   {"prefix": "playerstreamin",              "body": "public OnPlayerStreamIn(playerid, forplayerid) {\n\treturn 1;\n}"},
-    "OnPlayerStreamOut":                  {"prefix": "playerstreamout",             "body": "public OnPlayerStreamOut(playerid, forplayerid)t {\n\treturn 1;\n}"},
-    "OnPlayerTakeDamage":                 {"prefix": "playertakedamage",            "body": "public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart) {\n\treturn 1;\n}"},
-    "OnPlayerUpdate":                     {"prefix": "playerupdate",                "body": "public OnPlayerUpdate(playerid) {\n\treturn 1;\n}"},
-    "OnPlayerWeaponShot":                 {"prefix": "playerweaponshot",            "body": "public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ) {\n\treturn 1;\n}"},
-    "OnPlayerText":                       {"prefix": "playertext",                  "body": "public OnPlayerText(playerid, text) {\n\treturn 1;\n}"},
-    "OnRconCommand":                      {"prefix": "rconcommand",                 "body": "public OnRconCommand(cmd[]) {\n\treturn 0;\n}"},
-    "OnRconLoginAttempt":                 {"prefix": "rconloginattempt",            "body": "public OnRconLoginAttempt(ip[], password[], success) {\n\treturn 1;\n}"},
-    "OnTrailerUpdate":                    {"prefix": "trailerupdate",               "body": "public OnTrailerUpdate(playerid, vehicleid) {\n\treturn 0;\n}"},
-    "OnUnoccupiedVehicleUpdate":          {"prefix": "unoccupiedvehicleupdate",     "body": "public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_x, Float:new_y, Float:new_z, Float:vel_x, Float:vel_y, Float:vel_z) {\n\treturn 1;\n}"},
-    "OnVehicleDamageStatusUpdate":        {"prefix": "vehicledamagestatusupdate",   "body": "public OnVehicleDamageStatusUpdate(vehicleid, playerid) {\n\treturn 1;\n}"},
-    "OnVehicleDeath":                     {"prefix": "vehicledeath",                "body": "public OnVehicleDeath(vehicleid, killerid) {\n\treturn 1;\n}"},
-    "OnVehicleMod":                       {"prefix": "vehiclemod",                  "body": "public OnVehicleMod(playerid, vehicleid, componentid) {\n\treturn 1;\n}"},
-    "OnVehiclePaintjob":                  {"prefix": "vehiclepaintjob",             "body": "public OnVehiclePaintjob(playerid, vehicleid, paintjobid) {\n\treturn 1;\n}"},
-    "OnVehicleRespray":                   {"prefix": "vehiclerespray",              "body": "public OnVehicleRespray(playerid, vehicleid, color1, color2) {\n\treturn 1;\n}"},
-    "OnVehicleStreamIn":                  {"prefix": "vehiclestreamin",             "body": "public OnVehicleStreamIn(vehicleid, forplayerid) {\n\treturn 1;\n}"},
-    "OnVehicleSpawn":                     {"prefix": "vehiclespawn",                "body": "public OnVehicleSpawn(vehicleid) {\n\treturn 1;\n}"},
-    "OnVehicleStreamOut":                 {"prefix": "vehiclestreamout",            "body": "public OnVehicleStreamOut(vehicleid, forplayerid) {\n\treturn 1;\n}"}
+  ".source.pwn, .source.inc":{
+    "OnClientMessage":{
+      "prefix":"clientmessage",
+      "body":"public OnClientMessage(color, text[]) {\n\n}"
+    },
+    "OnPlayerDeath":{
+      "prefix":"npcdeath",
+      "body":"public OnPlayerDeath(playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerStreamIn":{
+      "prefix":"npcstreamin",
+      "body":"public OnPlayerStreamIn(playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerStreamOut":{
+      "prefix":"npcstreamout",
+      "body":"public OnPlayerStreamOut(playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerText":{
+      "prefix":"npctext",
+      "body":"public OnPlayerText(playerid, text[]) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnRecordingPlaybackEnd":{
+      "prefix":"recordplaybackend",
+      "body":"public OnRecordingPlaybackEnd() {\n\n}"
+    },
+    "OnVehicleStreamIn":{
+      "prefix":"npcvehiclestreamin",
+      "body":"public OnVehicleStreamIn(vehicleid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnVehicleStreamOut":{
+      "prefix":"npcvehiclestreamout",
+      "body":"public OnVehicleStreamOut(vehicleid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnDialogResponse":{
+      "prefix":"dialogresponse",
+      "body":"public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {\n\t${0:// body ...}\n\treturn 0;\n}"
+    },
+    "OnEnterExitModShop":{
+      "prefix":"enterexitmodshop",
+      "body":"public OnEnterExitModShop(playerid,enterexit,interiorid)"
+    },
+    "OnFilterScriptExit":{
+      "prefix":"filterscriptexit",
+      "body":"public OnFilterScriptInit() {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnFilterScriptInit":{
+      "prefix":"filterscriptinit",
+      "body":"public OnFilterScriptInit() {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnGameModeExit":{
+      "prefix":"gamemodeexit",
+      "body":"public OnGameModeExit() {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnGameModeInit":{
+      "prefix":"gamemodeinit",
+      "body":"public OnGameModeInit() {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnIncomingConnection":{
+      "prefix":"incomingconnection",
+      "body":"public OnIncomingConnection(playerid, ip_address[], port) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnObjectMoved":{
+      "prefix":"objectmoved",
+      "body":"public OnObjectMoved(objectid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerClickMap":{
+      "prefix":"playerclickmap",
+      "body":"public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerClickPlayer":{
+      "prefix":"playerclickplayer",
+      "body":"public OnPlayerClickPlayer(playerid, clickedplayerid, source) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerClickPlayerTextDraw":{
+      "prefix":"playerclickplayertd",
+      "body":"public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerClickTextDraw":{
+      "prefix":"playerclicktd",
+      "body":"public OnPlayerClickTextDraw(playerid, Text:clickedid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerCommandText":{
+      "prefix":"playercommand",
+      "body":"public OnPlayerCommandText(playerid, cmdtext[]) {\n\t${0:// body ...}\n\treturn 0;\n}"
+    },
+    "OnPlayerConnect":{
+      "prefix":"playerconnect",
+      "body":"public OnPlayerConnect(playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerDeath":{
+      "prefix":"playerdeath",
+      "body":"public OnPlayerDeath(playerid, killerid, reason) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerDisconnect":{
+      "prefix":"playerdisconnect",
+      "body":"public OnPlayerDisconnect(playerid, reason) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerEditAttachedObject":{
+      "prefix":"playereditattachedobject",
+      "body":"public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerEnterCheckpoint":{
+      "prefix":"playerentercp",
+      "body":"public OnPlayerEnterCheckpoint(playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerEditObject":{
+      "prefix":"playereditobject",
+      "body":"public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ) {\n\n}"
+    },
+    "OnPlayerEnterRaceCheckpoint":{
+      "prefix":"playerenterracecp",
+      "body":"public OnPlayerEnterRaceCheckpoint(playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerEnterVehicle":{
+      "prefix":"playerentervehicle",
+      "body":"public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerExitVehicle":{
+      "prefix":"playerexitvehicle",
+      "body":"public OnPlayerExitVehicle(playerid, vehicleid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerExitedMenu":{
+      "prefix":"playerexitedmenu",
+      "body":"public OnPlayerExitedMenu(playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerGiveDamage":{
+      "prefix":"playergivedamage",
+      "body":"public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerInteriorChange":{
+      "prefix":"playerinteriorchange",
+      "body":"public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerLeaveCheckpoint":{
+      "prefix":"playerleavecp",
+      "body":"public OnPlayerLeaveCheckpoint(playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerKeyStateChange":{
+      "prefix":"playerkeystatechange",
+      "body":"public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerLeaveRaceCheckpoint":{
+      "prefix":"playerleaveracecp",
+      "body":"public OnPlayerLeaveRaceCheckpoint(playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerObjectMoved":{
+      "prefix":"playerobejctmoved",
+      "body":"public OnPlayerObjectMoved(playerid,objectid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerPickUpPickup":{
+      "prefix":"playerpickup",
+      "body":"public OnPlayerPickUpPickup(playerid, pickupid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerRequestClass":{
+      "prefix":"playerrequestclass",
+      "body":"public OnPlayerRequestClass(playerid, classid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerRequestSpawn":{
+      "prefix":"playerrequestspawn",
+      "body":"public OnPlayerRequestSpawn(playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerSelectObject":{
+      "prefix":"playerselectobject",
+      "body":"public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:fY, Float:fZ) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerSelectedMenuRow":{
+      "prefix":"playerselectmenurow",
+      "body":"public OnPlayerSelectedMenuRow(playerid, row) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerStateChange":{
+      "prefix":"playerstatechange",
+      "body":"public OnPlayerStateChange(playerid, newstate, oldstate) {\n\t${0:// body ...}\n\treturn 1;\n}e"
+    },
+    "OnPlayerSpawn":{
+      "prefix":"playerspawn",
+      "body":"public OnPlayerSpawn(playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerStreamIn":{
+      "prefix":"playerstreamin",
+      "body":"public OnPlayerStreamIn(playerid, forplayerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerStreamOut":{
+      "prefix":"playerstreamout",
+      "body":"public OnPlayerStreamOut(playerid, forplayerid)t {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerTakeDamage":{
+      "prefix":"playertakedamage",
+      "body":"public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerUpdate":{
+      "prefix":"playerupdate",
+      "body":"public OnPlayerUpdate(playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerWeaponShot":{
+      "prefix":"playerweaponshot",
+      "body":"public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnPlayerText":{
+      "prefix":"playertext",
+      "body":"public OnPlayerText(playerid, text) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnRconCommand":{
+      "prefix":"rconcommand",
+      "body":"public OnRconCommand(cmd[]) {\n\t${0:// body ...}\n\treturn 0;\n}"
+    },
+    "OnRconLoginAttempt":{
+      "prefix":"rconloginattempt",
+      "body":"public OnRconLoginAttempt(ip[], password[], success) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnTrailerUpdate":{
+      "prefix":"trailerupdate",
+      "body":"public OnTrailerUpdate(playerid, vehicleid) {\n\t${0:// body ...}\n\treturn 0;\n}"
+    },
+    "OnUnoccupiedVehicleUpdate":{
+      "prefix":"unoccupiedvehicleupdate",
+      "body":"public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_x, Float:new_y, Float:new_z, Float:vel_x, Float:vel_y, Float:vel_z) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnVehicleDamageStatusUpdate":{
+      "prefix":"vehicledamagestatusupdate",
+      "body":"public OnVehicleDamageStatusUpdate(vehicleid, playerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnVehicleDeath":{
+      "prefix":"vehicledeath",
+      "body":"public OnVehicleDeath(vehicleid, killerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnVehicleMod":{
+      "prefix":"vehiclemod",
+      "body":"public OnVehicleMod(playerid, vehicleid, componentid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnVehiclePaintjob":{
+      "prefix":"vehiclepaintjob",
+      "body":"public OnVehiclePaintjob(playerid, vehicleid, paintjobid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnVehicleRespray":{
+      "prefix":"vehiclerespray",
+      "body":"public OnVehicleRespray(playerid, vehicleid, color1, color2) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnVehicleStreamIn":{
+      "prefix":"vehiclestreamin",
+      "body":"public OnVehicleStreamIn(vehicleid, forplayerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnVehicleSpawn":{
+      "prefix":"vehiclespawn",
+      "body":"public OnVehicleSpawn(vehicleid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "OnVehicleStreamOut":{
+      "prefix":"vehiclestreamout",
+      "body":"public OnVehicleStreamOut(vehicleid, forplayerid) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "y_cmd command":{
+      "prefix":"ycmd",
+      "body":"YCMD:${1:command}(playerid, params[], help) {\n\t${0:// body ...}\n\treturn 1;\n}"
+    },
+    "zcmd command":{
+      "prefix":"cmd",
+      "body":"CMD:${1:command}(playerid, params[]) {\n\t${0:// body ...}\n\t\treturn 1;\n}"
+    },
+    "zcmd command":{
+      "prefix":"command",
+      "body":"COMMAND:${1:command}(playerid, params[]) {\n\t${0:// body ...}\n\t\treturn 1;\n}"
+    },
+    "for":{
+      "prefix":"for",
+      "body":"for(new ${2:i}=0;${2:i}>${1:max};${2:i}++) {\n\t${0:// body ...}\n\t}"
+    },
+    "foreach":{
+      "prefix":"fore",
+      "body":"foreach(new ${2:i} : $(1:Player)) {\n\t${0:// body ...}\n\t}"
+    },
+    "while":{
+      "prefix":"while",
+      "body":"while($(1:while this)) {\n\t${0:// do this}\n\t}"
+    },
+    "stock":{
+      "prefix":"stock",
+      "body":"stock ${1:function}(${2:paramters}) {\n\t${0:// body ...}\n\t}"
+    },
+    "function":{
+      "prefix":"func",
+      "body":"${1:function}(${2:paramters}) {\n\t${0:// body ...}\n\t}"
+    },
+    "Custom callback":{
+      "prefix":"callback",
+      "body":"forward ${1:callback}(${2:paramters});\n${1:callback}(${2:paramters}) {\n\t${0:// body ...}\n\t}"
+    },
+    "Custom function with native(for function hint)":{
+      "prefix":"nfunc",
+      "body":"native ${1:function}(${2:paramters});\n${1:function}(${2:paramters}) {\n\t${0:// body ...}\n\t}"
+    },
+    "faster including":{
+      "prefix":"inc",
+      "body":"#include <${0:a_samp}>"
+    },
+    "faster defining":{
+      "prefix":"def",
+      "body":"#define ${1:replace this} ${0:with this}"
+    },
+    "MYSQL: inline SELECT query":{
+      "prefix":"inlineselect",
+      "body":"mysql_format(${1:mysql}, ${2:query}, sizeof(${2:query}), \"SELECT ${3:*} FROM `${4:table}` WHERE ${5:1}\",${6:arrays});\ninline ${7:callback}() {\n\tnew rows, fields;\n\t\tcache_get_data(rows, fields, ${1:mysql});\n\t\tif(rows) {\n\t\t\t${0:// code ...}\n\t\t}\n}\nmysql_tquery_inline(${1:mysql}, ${2:query}, using inline ${7:callback});"
+    },
+    "MYSQL: Query with a format":{
+      "prefix":"fquery",
+      "body":"mysql_format(${1:mysql}, ${2:query}, sizeof(${2:query}), \"${3:SELECT * FROM `table` WHERE 1}\");\nmysql_tquery_inline(${1:mysql}, ${2:query}, \"${4:callback}\"${0:, \"d\", playerid});"
+    },
+    "Inline dialog":{
+      "prefix":"inlinedialog",
+      "body":"inline ${1:Response}(pid, dialogid, response, listitem, string:inputtext[]) {\n\t${0:// Inline function will end here.}\n}\nDialog_ShowCallback(playerid, using inline ${1:Response}, DIALOG_STYLE_${2:MSGBOX}, \"${3:Title}\", \"${4:Message}\", \"${5:Button 1}\", \"${6:Button 2}\");"
+    },
+    "Short inline dialog":{
+      "prefix":"shortdialog",
+      "body":"D:${1:id}(playerid, DIALOG_STYLE_${2:MSGBOX}, \"${3:LOGIN_TITLE}\", \"${4:LOGIN_TEXT}\", \"${5:BUTTON_1}\", ${6:BUTTON_2}) {\n\t${0:// Parse the result here.}\n}"
+    },
+    "For creating new includes":{
+      "prefix": "createinc",
+      "body":"#if defined _${0:INC_NAME}_\n\t#endinput\n#endif\n#define _${0:INC_NAME}_\n#if !defined _inc_a_samp\n\t#error Please include <a_samp> first.\n#endif"
+    }
   }
 }
