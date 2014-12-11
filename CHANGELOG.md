@@ -62,5 +62,6 @@ Some snippets contain more than one field to edit, press TAB to continue editing
   * ycmd<br>
   y_commands command<br>
 <br>
+
 **0.0.1 - First Release<br>
 * Created the package<br>
