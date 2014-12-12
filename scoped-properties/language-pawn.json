@@ -3,6 +3,7 @@
     "editor": {
       "commentStart": "// ",
       "completions": [
+        "sscanf",
         "AddMenuItem",
         "AddPlayerClass",
         "AddPlayerClassEx",
