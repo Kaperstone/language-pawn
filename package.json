@@ -1,6 +1,6 @@
 {
   "name": "language-pawn",
-  "main": "./lib/atom-pawn-language",
+  "main": "./lib/atom-language-pawn",
   "version": "0.0.2",
   "description": "Pawn language support for Atom",
   "license": "MIT",
