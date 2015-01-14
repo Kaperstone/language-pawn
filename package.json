@@ -3,18 +3,14 @@
   "main": "./lib/atom-language-pawn",
   "version": "0.0.2",
   "description": "Pawn language support for Atom",
+  "activationCommands": {
+    "atom-workspace": "atom-language-pawn:toggle"
+  },
+  "repository": "https://github.com/atom/atom-language-pawn",
+  "bugs": "https://github.com/Kaperstone/atom-language-pawn/issues",
   "license": "MIT",
   "engines": {
     "atom": "*"
-  },
-  "activationCommands": {
-    "atom-workspace": "toggle pawn-language"
-  },
-  "repository": {
-    "url": "https://github.com/Kaperstone/atom-language-pawn"
-  },
-  "bugs": {
-    "url": "https://github.com/Kaperstone/atom-language-pawn/issues"
   },
   "dependencies": {
   }
