@@ -6,7 +6,7 @@
   "activationCommands": {
     "atom-workspace": "atom-language-pawn:toggle"
   },
-  "repository": "https://github.com/atom/atom-language-pawn",
+  "repository": "https://github.com/Kaperstone/atom-language-pawn",
   "bugs": "https://github.com/Kaperstone/atom-language-pawn/issues",
   "license": "MIT",
   "engines": {
