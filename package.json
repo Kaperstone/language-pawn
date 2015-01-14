@@ -1,11 +1,11 @@
 {
-  "name": "language-pawn",
+  "name": "atom-language-pawn",
   "main": "./lib/atom-language-pawn",
   "version": "0.0.2",
   "description": "Pawn language support for Atom",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": "*"
   },
   "activationCommands": {
     "atom-workspace": "toggle pawn-language"
