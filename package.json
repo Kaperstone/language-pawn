@@ -1,5 +1,5 @@
 {
-  "name": "language-pawn",
+  "name": "Pawn Syntax Highlight for Atom",
   "main": "./lib/language-pawn",
   "version": "0.2.1",
   "description": "Pawn language support for Atom",
