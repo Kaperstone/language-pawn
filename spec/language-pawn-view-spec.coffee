@@ -1,4 +1,4 @@
-AtomLanguagePawnView = require '../lib/atom-language-pawn-view'
+AtomLanguagePawnView = require '../lib/language-pawn-view'
 
 describe "AtomLanguagePawnView", ->
   it "has one valid test", ->
