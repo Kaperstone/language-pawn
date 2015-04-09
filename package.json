@@ -1,7 +1,7 @@
 {
   "name": "language-pawn",
   "main": "./lib/language-pawn",
-  "version": "0.3.1",
+  "version": "0.2.1",
   "description": "Pawn language support for Atom",
   "activationCommands": {
     "atom-workspace": "language-pawn:toggle"
