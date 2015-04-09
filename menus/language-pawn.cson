@@ -2,19 +2,19 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle atom-language-pawn'
-      'command': 'atom-language-pawn:toggle'
+      'label': 'Toggle language-pawn'
+      'command': 'language-pawn:toggle'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'atom-language-pawn'
+      'label': 'language-pawn'
       'submenu': [
         {
           'label': 'Toggle'
-          'command': 'atom-language-pawn:toggle'
+          'command': 'language-pawn:toggle'
         }
       ]
     ]
