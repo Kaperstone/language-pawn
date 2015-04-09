@@ -3,7 +3,7 @@ class AtomLanguagePawnView
   constructor: (serializeState) ->
     # Create root element
     @element = document.createElement('div')
-    @element.classList.add('atom-language-pawn')
+    @element.classList.add('language-pawn')
 
     # Create message element
     message = document.createElement('div')
