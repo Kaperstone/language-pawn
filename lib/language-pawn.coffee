@@ -1,4 +1,4 @@
-AtomLanguagePawnView = require './atom-language-pawn-view'
+AtomLanguagePawnView = require './language-pawn-view'
 {CompositeDisposable} = require 'atom'
 
 module.exports = AtomLanguagePawn =
@@ -14,7 +14,7 @@ module.exports = AtomLanguagePawn =
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-language-pawn:toggle': => @toggle()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'language-pawn:toggle': => @toggle()
 
   deactivate: ->
     @modalPanel.destroy()
