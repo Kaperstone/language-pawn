@@ -1,4 +1,4 @@
-AtomLanguagePawn = require '../lib/atom-language-pawn'
+AtomLanguagePawn = require '../lib/language-pawn'
 
 # Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 #
@@ -10,30 +10,30 @@ describe "AtomLanguagePawn", ->
 
   beforeEach ->
     workspaceElement = atom.views.getView(atom.workspace)
-    activationPromise = atom.packages.activatePackage('atom-language-pawn')
+    activationPromise = atom.packages.activatePackage('language-pawn')
 
-  describe "when the atom-language-pawn:toggle event is triggered", ->
+  describe "when the language-pawn:toggle event is triggered", ->
     it "hides and shows the modal panel", ->
       # Before the activation event the view is not on the DOM, and no panel
       # has been created
-      expect(workspaceElement.querySelector('.atom-language-pawn')).not.toExist()
+      expect(workspaceElement.querySelector('.language-pawn')).not.toExist()
 
       # This is an activation event, triggering it will cause the package to be
       # activated.
-      atom.commands.dispatch workspaceElement, 'atom-language-pawn:toggle'
+      atom.commands.dispatch workspaceElement, 'language-pawn:toggle'
 
       waitsForPromise ->
         activationPromise
 
       runs ->
-        expect(workspaceElement.querySelector('.atom-language-pawn')).toExist()
+        expect(workspaceElement.querySelector('.language-pawn')).toExist()
 
-        atomLanguagePawnElement = workspaceElement.querySelector('.atom-language-pawn')
+        atomLanguagePawnElement = workspaceElement.querySelector('.language-pawn')
         expect(atomLanguagePawnElement).toExist()
 
         atomLanguagePawnPanel = atom.workspace.panelForItem(atomLanguagePawnElement)
         expect(atomLanguagePawnPanel.isVisible()).toBe true
-        atom.commands.dispatch workspaceElement, 'atom-language-pawn:toggle'
+        atom.commands.dispatch workspaceElement, 'language-pawn:toggle'
         expect(atomLanguagePawnPanel.isVisible()).toBe false
 
     it "hides and shows the view", ->
@@ -45,18 +45,18 @@ describe "AtomLanguagePawn", ->
       # workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement)
 
-      expect(workspaceElement.querySelector('.atom-language-pawn')).not.toExist()
+      expect(workspaceElement.querySelector('.language-pawn')).not.toExist()
 
       # This is an activation event, triggering it causes the package to be
       # activated.
-      atom.commands.dispatch workspaceElement, 'atom-language-pawn:toggle'
+      atom.commands.dispatch workspaceElement, 'language-pawn:toggle'
 
       waitsForPromise ->
         activationPromise
 
       runs ->
         # Now we can test for view visibility
-        atomLanguagePawnElement = workspaceElement.querySelector('.atom-language-pawn')
+        atomLanguagePawnElement = workspaceElement.querySelector('.language-pawn')
         expect(atomLanguagePawnElement).toBeVisible()
-        atom.commands.dispatch workspaceElement, 'atom-language-pawn:toggle'
+        atom.commands.dispatch workspaceElement, 'language-pawn:toggle'
         expect(atomLanguagePawnElement).not.toBeVisible()
