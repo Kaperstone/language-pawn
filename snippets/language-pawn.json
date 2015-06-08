@@ -254,11 +254,11 @@
     },
     "zcmd command":{
       "prefix":"cmd",
-      "body":"CMD:${1:command}(playerid, params[]) {\n\t${0:// body ...}\n\t\treturn 1;\n}"
+      "body":"CMD:${1:command}(playerid, params[]) {\n\t${0:// body ...}\n\treturn 1;\n}"
     },
     "zcmd command":{
       "prefix":"command",
-      "body":"COMMAND:${1:command}(playerid, params[]) {\n\t${0:// body ...}\n\t\treturn 1;\n}"
+      "body":"COMMAND:${1:command}(playerid, params[]) {\n\t${0:// body ...}\n\treturn 1;\n}"
     },
     "for":{
       "prefix":"for",
